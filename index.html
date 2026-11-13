@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hanzla — Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio and showcase of Hanzla (mhanzlabhait) — Full-Stack Developer & Creative Builder." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">Hanzla<span>.dev</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark or light theme" title="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+        <button id="menu-toggle" class="icon-btn mobile-only" type="button" aria-label="Open menu" aria-expanded="false">
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <span class="greeting-badge">👋 Assalam-o-Alaikum / Hello!</span>
+        <h1>Hi, I'm <span class="gradient-text">Hanzla</span></h1>
+        <p class="hero-role">
+          <span id="typewriter-text">Full-Stack Developer</span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+        <p class="hero-bio">
+          I build fast, clean, and user-friendly web experiences. Turning everyday ideas into modern digital products with thoughtful design and reliable code.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          <a href="https://github.com/mhanzlabhait" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            GitHub ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card glass-card">
+        <div class="avatar-ring">
+          <div class="avatar">H</div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>Full-Stack</strong>
+            <span>Web &amp; Mobile UI</span>
+          </div>
+          <div class="stat">
+            <strong>@mhanzlabhait</strong>
+            <span>Open Source &amp; Builds</span>
+          </div>
+        </div>
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          Available for exciting projects
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2>Crafting clean code &amp; smooth interfaces</h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card about-card">
+          <h3>Who I Am</h3>
+          <p>
+            I'm Hanzla, a passionate developer focused on building responsive web applications, interactive UIs, and practical tools that feel great on both mobile and desktop.
+          </p>
+        </div>
+        <div class="glass-card about-card">
+          <h3>How I Work</h3>
+          <p>
+            I believe in clean architecture, fast performance, and intuitive design. Whether it's a sleek portfolio, a productivity app, or a full-stack product, every detail matters.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Tech Stack</span>
+        <h2>Skills &amp; Tools</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="glass-card skill-group">
+          <h3>Frontend</h3>
+          <div class="pill-list">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3 / Flexbox / Grid</span>
+            <span class="pill">JavaScript (ES6+)</span>
+            <span class="pill">React</span>
+            <span class="pill">Tailwind CSS</span>
+            <span class="pill">Responsive UI</span>
+          </div>
+        </article>
+        <article class="glass-card skill-group">
+          <h3>Backend</h3>
+          <div class="pill-list">
+            <span class="pill">Node.js</span>
+            <span class="pill">Express</span>
+            <span class="pill">Python</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">Auth &amp; Security</span>
+          </div>
+        </article>
+        <article class="glass-card skill-group">
+          <h3>Tools &amp; Workflow</h3>
+          <div class="pill-list">
+            <span class="pill">Git &amp; GitHub</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Mobile-First Design</span>
+            <span class="pill">Figma</span>
+            <span class="pill">CI / CD</span>
+            <span class="pill">Vercel / Cloud</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="web">Web Apps</button>
+        <button class="filter-btn" type="button" data-filter="ui">UI/UX</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="glass-card project-card" data-category="web" data-project="kia-howa">
+          <div class="project-top">
+            <span class="project-badge">Web App</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>Kia Howa Web App</h3>
+          <p>
+            A sleek, mobile-first status &amp; activity hub designed for quick updates and clean real-time interactions.
+          </p>
+          <div class="pill-list">
+            <span class="pill">JavaScript</span>
+            <span class="pill">Glassmorphism</span>
+            <span class="pill">Mobile UI</span>
+          </div>
+          <button class="btn btn-secondary btn-sm preview-btn" type="button">Preview Details</button>
+        </article>
+
+        <article class="glass-card project-card" data-category="web" data-project="smart-tasks">
+          <div class="project-top">
+            <span class="project-badge">Web App</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>Smart Task Hub</h3>
+          <p>
+            Fast productivity workspace with drag-free quick actions, local persistence, and distraction-free focus mode.
+          </p>
+          <div class="pill-list">
+            <span class="pill">HTML5</span>
+            <span class="pill">LocalStorage</span>
+            <span class="pill">CSS Grid</span>
+          </div>
+          <button class="btn btn-secondary btn-sm preview-btn" type="button">Preview Details</button>
+        </article>
+
+        <article class="glass-card project-card" data-category="ui" data-project="chat-ui">
+          <div class="project-top">
+            <span class="project-badge">UI/UX</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>Real-Time Chat UI</h3>
+          <p>
+            Responsive messaging interface built with fluid animations, typing indicators, and dark/light theme support.
+          </p>
+          <div class="pill-list">
+            <span class="pill">UI Design</span>
+            <span class="pill">Animations</span>
+            <span class="pill">Accessibility</span>
+          </div>
+          <button class="btn btn-secondary btn-sm preview-btn" type="button">Preview Details</button>
+        </article>
+
+        <article class="glass-card project-card" data-category="ui" data-project="dev-portfolio">
+          <div class="project-top">
+            <span class="project-badge">UI/UX</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>Dev Portfolio</h3>
+          <p>
+            Zero-dependency personal site featuring interactive project filters, theme switching, and smooth mobile navigation.
+          </p>
+          <div class="pill-list">
+            <span class="pill">CSS Variables</span>
+            <span class="pill">Vanilla JS</span>
+            <span class="pill">Performance</span>
+          </div>
+          <button class="btn btn-secondary btn-sm preview-btn" type="button">Preview Details</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2>Let's Build Something Great</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="glass-card contact-info">
+          <h3>Say Hello!</h3>
+          <p>
+            Have a project idea, collaboration, or just want to connect? Send a message using the form or reach out on GitHub.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/mhanzlabhait" target="_blank" rel="noopener noreferrer" class="social-link">
+              GitHub · @mhanzlabhait ↗
+            </a>
+            <a href="#contact-form" class="social-link">
+              Direct Message ↓
+            </a>
+          </div>
+        </div>
+
+        <form id="contact-form" class="glass-card contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" placeholder="e.g. Ali" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Hanzla (mhanzlabhait). Built with care.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Project Preview Modal -->
+  <div id="project-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content glass-card">
+      <button id="modal-close" class="icon-btn modal-close" type="button" aria-label="Close modal">✕</button>
+      <span id="modal-badge" class="project-badge">Web App</span>
+      <h3 id="modal-title">Project Title</h3>
+      <p id="modal-description">Project details go here.</p>
+      <div id="modal-highlights" class="modal-highlights"></div>
+      <div class="modal-actions">
+        <a href="https://github.com/mhanzlabhait" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          View on GitHub ↗
+        </a>
+        <button id="modal-dismiss" type="button" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
